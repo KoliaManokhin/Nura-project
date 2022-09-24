@@ -65,4 +65,97 @@ li {
   border-bottom: 1px solid #DBA069;
 }
 
+.intro-section {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+.intro-section .intro-section__information {
+  position: absolute;
+  top: 40%;
+}
+.intro-section__img img {
+  width: 100%;
+  height: 100vh;
+}
+
+.information {
+  width: 100%;
+  padding-left: 9%;
+  padding-right: 9%;
+  display: flex;
+  justify-content: space-between;
+}
+.information__title, .information__button button {
+  font-weight: 700;
+  line-height: 140%;
+}
+.information__title {
+  margin-bottom: 20px;
+  font-size: 38px;
+  color: #FFFFFF;
+}
+.information__button button {
+  padding: 20px 30px 20px 30px;
+  background-color: #DBA069;
+  border: 1px solid #DBA069;
+  color: #333333;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.information__button button:hover {
+  opacity: 0.8;
+}
+
+.information-status {
+  margin-top: 40px;
+}
+.information-status__number-cottage {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+.type-cotedge {
+  display: flex;
+}
+.type-cotedge__information {
+  margin-top: 20px;
+  display: flex;
+  margin-right: 26px;
+}
+.type-cotedge__number {
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 83.7%;
+  color: #FFFFFF;
+}
+.type-cotedge__about {
+  max-width: 116px;
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.information-about-cotedge {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.information-about-cotedge__text {
+  max-width: 296px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
 /*# sourceMappingURL=style.css.map */
