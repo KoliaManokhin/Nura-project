@@ -5,7 +5,6 @@
 }
 
 body{
-    background-color: bisque;
     font-family: 'Fira Sans';
     font-style: normal;
 }
@@ -80,9 +79,6 @@ li{
 .intro-section{
     width: 100%;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: -5;
 
     .intro-section__information{
@@ -91,6 +87,9 @@ li{
     }
 
     &__img img{
+        position: absolute;
+        top: 0;
+        z-index: -5;
         width: 100%;
         height: 100vh;
     }
@@ -181,4 +180,77 @@ li{
         color: #FFFFFF;
     }
 }
+
+// About section
+.about-section{
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-bottom: 51px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paragraph-title{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.paragraph-text{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 110%;
+    color: #333333;
+}
+
+.about-intro{
+    &__title{
+        margin-bottom: 60px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #333333;
+    }
+
+    &__text{
+        margin-bottom: 30px;
+    }
+
+    &__text, &__list-item{
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 110%;
+        color: #333333;
+    }
+
+    &__list{
+        margin-bottom: 60px;
+    }
+
+    &__list-item_strong{
+        font-weight: bolder;
+    }
+}
+
+.about-company{
+    max-width: 617px;
+    margin-bottom: 60px;
+}
+
+.mission-block{
+    max-width: 646px;
+}
+
+.about-section__img{
+    margin-top: 35px;
+    margin-bottom: 10.6%;
+}
+
+.goal-section__text{
+    max-width: 429px;
+}
+
+
 
