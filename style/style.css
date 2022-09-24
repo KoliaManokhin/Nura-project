@@ -1,3 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: bisque;
+  font-family: "Fira Sans";
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  padding-left: 9%;
+  padding-right: 9%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__contacts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.nav__phone-number {
+  display: flex;
+  align-items: center;
+  border: 1px solid #DBA069;
+  padding: 10px 20px 10px 20px;
+}
+.nav__phone-number img {
+  margin-right: 10px;
+}
+.nav__phone-number a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+.nav__about-link {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+.nav__about-link a {
+  padding-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  transition: 0.2s ease-in-out;
+}
+.nav__about-link a:hover {
+  border-bottom: 1px solid #DBA069;
+}
 
 /*# sourceMappingURL=style.css.map */

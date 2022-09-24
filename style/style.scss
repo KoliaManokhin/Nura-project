@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+    font-family: 'Fira Sans';
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+//--------------------Header style--------------------
+.header{
+    padding-left: 9%;
+    padding-right: 9%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    &__contacts{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    &__phone-number{
+        display: flex;
+        align-items: center;
+        border: 1px solid #DBA069;
+        padding: 10px 20px 10px 20px;
+
+        img{
+            margin-right: 10px;
+        }
+
+        a{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+        }
+    }
+
+    &__about-link{
+        display: flex;
+        gap: 50px;
+        margin-top: 20px;
+
+        a{
+            padding-bottom: 5px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+            transition: .2s ease-in-out;
+
+            &:hover{
+                border-bottom: 1px solid #DBA069;
+            }
+        }
+    }
+}
