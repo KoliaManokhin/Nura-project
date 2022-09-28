@@ -107,7 +107,10 @@ li {
   transition: 0.2s ease-in-out;
 }
 .information__button button:hover {
-  opacity: 0.8;
+  transform: scale(1.2);
+  background-color: brown;
+  border: 1px solid brown;
+  color: white;
 }
 
 .information-status {
@@ -219,6 +222,37 @@ li {
 
 .goal-section__text {
   max-width: 429px;
+}
+
+.cottage-section {
+  background-color: rgba(132, 34, 49, 0.05);
+}
+
+.img-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 39px 40px 44px 40px;
+}
+.img-carousel__nav-element {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border-radius: 40px;
+  width: 52px;
+  height: 52px;
+}
+.img-carousel__nav-element:hover {
+  transform: scale(1.1);
+  border: 1px solid orange;
+}
+.img-carousel__img-cottage-box {
+  position: relative;
+}
+.img-carousel__grid-element {
+  position: absolute;
+  z-index: -5;
+  top: 68px;
+  right: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */
