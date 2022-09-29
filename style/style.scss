@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Fira Sans';
     font-style: normal;
@@ -22,6 +26,10 @@ li{
     padding-right: 9%;
     display: flex;
     justify-content: space-between;
+    background-color: rgba(132, 34, 49, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
 }
 
 .nav{
@@ -49,6 +57,11 @@ li{
             line-height: 24px;
             letter-spacing: 0.04em;
             color: #FFFFFF;
+            transition: .2s ease-in-out;
+
+            &:hover{
+                color: lightblue;
+            }
         }
     }
 
@@ -124,8 +137,8 @@ li{
 
         &:hover{
             transform: scale(1.2);
-            background-color: brown;
-            border: 1px solid brown;
+            background-color: rgba(132, 34, 49);
+            border: 1px solid rgba(132, 34, 49);
             color: white;
         }
         
@@ -186,11 +199,18 @@ li{
 
 // About section
 .about-section{
-    padding-left: 9%;
-    padding-right: 9%;
-    padding-bottom: 51px;
+    padding: 9% 9% 51px 9%;
     display: flex;
     justify-content: space-between;
+    position: relative;
+
+
+    &__bg-img img{
+        position: absolute;
+        z-index: -3;
+        top: 10%;
+        left: 20%;
+    }
 }
 
 .paragraph-title{
@@ -258,6 +278,14 @@ li{
 // Cottadge section
 .cottage-section{
     background-color: rgba(132, 34, 49, 0.05);
+
+    &__title{
+        margin-left: 9%;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #333333;
+    }
 }
 
 .img-carousel{
@@ -288,6 +316,15 @@ li{
         z-index: -5;
         top: 68px;
         right: 30%;
+    }
+
+    &__number{
+        margin-left: 68px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 140%;
+        color: #333333;
     }
 
 

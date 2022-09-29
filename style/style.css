@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Fira Sans";
   font-style: normal;
@@ -22,6 +26,10 @@ li {
   padding-right: 9%;
   display: flex;
   justify-content: space-between;
+  background-color: rgba(132, 34, 49, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
 
 .nav__contacts {
@@ -46,6 +54,10 @@ li {
   line-height: 24px;
   letter-spacing: 0.04em;
   color: #FFFFFF;
+  transition: 0.2s ease-in-out;
+}
+.nav__phone-number a:hover {
+  color: lightblue;
 }
 .nav__about-link {
   display: flex;
@@ -108,8 +120,8 @@ li {
 }
 .information__button button:hover {
   transform: scale(1.2);
-  background-color: brown;
-  border: 1px solid brown;
+  background-color: rgb(132, 34, 49);
+  border: 1px solid rgb(132, 34, 49);
   color: white;
 }
 
@@ -161,11 +173,16 @@ li {
 }
 
 .about-section {
-  padding-left: 9%;
-  padding-right: 9%;
-  padding-bottom: 51px;
+  padding: 9% 9% 51px 9%;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.about-section__bg-img img {
+  position: absolute;
+  z-index: -3;
+  top: 10%;
+  left: 20%;
 }
 
 .paragraph-title {
@@ -227,6 +244,13 @@ li {
 .cottage-section {
   background-color: rgba(132, 34, 49, 0.05);
 }
+.cottage-section__title {
+  margin-left: 9%;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #333333;
+}
 
 .img-carousel {
   display: flex;
@@ -253,6 +277,14 @@ li {
   z-index: -5;
   top: 68px;
   right: 30%;
+}
+.img-carousel__number {
+  margin-left: 68px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  color: #333333;
 }
 
 /*# sourceMappingURL=style.css.map */
