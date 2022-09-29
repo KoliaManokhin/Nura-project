@@ -178,11 +178,17 @@ li {
   justify-content: space-between;
   position: relative;
 }
-.about-section__bg-img img {
+.about-section__bg-img {
+  max-width: 1375px;
   position: absolute;
+  top: 100px;
+  left: 0;
   z-index: -3;
-  top: 10%;
-  left: 20%;
+  left: 9%;
+}
+.about-section__bg-img img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .paragraph-title {
